@@ -3,10 +3,7 @@ import sys
 with open("inputs3.txt") as f:
     content = f.readlines()
 
-terrain = []
-for line in content:
-    line = line.strip()
-    terrain.append([x for x in line])
+terrain = [x.strip() for x in content]
 
 def day3(t: list, increment: int, slope: int) -> int:
     index = 0

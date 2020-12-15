@@ -39,10 +39,7 @@ def day2_p2(passwords: dict) -> int:
             index2 = (key[0][j][1] - 1)
             if word[index1] == letter and word[index2] == letter:
                 continue
-            if word[index1] == letter:
-                valid += 1
-                continue
-            if word[index2] == letter:
+            if word[index1] == letter or word[index2] == letter:
                 valid += 1
     return valid
 print(day2_p2(passwords))
