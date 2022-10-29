@@ -1,0 +1,1142 @@
+1 0 2 Guard #137 begins shift
+1 0 39 falls asleep
+1 0 55 wakes up
+1 23 56 Guard #2441 begins shift
+2 23 49 Guard #3251 begins shift
+3 0 5 falls asleep
+3 0 34 wakes up
+3 23 59 Guard #479 begins shift
+4 0 14 falls asleep
+4 0 27 wakes up
+4 0 42 falls asleep
+4 0 58 wakes up
+5 0 1 Guard #1871 begins shift
+5 0 26 falls asleep
+5 0 45 wakes up
+5 23 59 Guard #811 begins shift
+6 0 32 falls asleep
+6 0 59 wakes up
+7 0 1 Guard #967 begins shift
+7 0 9 falls asleep
+7 0 28 wakes up
+7 23 59 Guard #1871 begins shift
+8 0 23 falls asleep
+8 0 32 wakes up
+8 0 37 falls asleep
+8 0 54 wakes up
+8 23 59 Guard #3221 begins shift
+9 0 20 falls asleep
+9 0 51 wakes up
+10 0 2 Guard #3347 begins shift
+10 0 54 falls asleep
+10 0 57 wakes up
+11 0 1 Guard #2741 begins shift
+11 0 41 falls asleep
+11 0 55 wakes up
+12 0 0 Guard #1213 begins shift
+12 0 40 falls asleep
+12 0 59 wakes up
+12 23 59 Guard #811 begins shift
+13 0 16 falls asleep
+13 0 53 wakes up
+13 23 54 Guard #479 begins shift
+14 0 0 falls asleep
+14 0 55 wakes up
+14 23 59 Guard #2351 begins shift
+15 0 10 falls asleep
+15 0 16 wakes up
+15 23 58 Guard #2441 begins shift
+16 23 57 Guard #137 begins shift
+17 0 31 falls asleep
+17 0 54 wakes up
+18 0 0 Guard #2351 begins shift
+18 0 11 falls asleep
+18 0 55 wakes up
+19 0 1 Guard #967 begins shift
+19 0 20 falls asleep
+19 0 39 wakes up
+19 0 51 falls asleep
+19 0 54 wakes up
+19 0 57 falls asleep
+19 0 59 wakes up
+20 0 0 Guard #3221 begins shift
+20 0 28 falls asleep
+20 0 29 wakes up
+20 0 32 falls asleep
+20 0 55 wakes up
+21 0 3 Guard #3221 begins shift
+21 0 18 falls asleep
+21 0 37 wakes up
+21 23 52 Guard #83 begins shift
+22 0 3 falls asleep
+22 0 58 wakes up
+23 0 4 Guard #631 begins shift
+23 0 31 falls asleep
+23 0 35 wakes up
+23 0 45 falls asleep
+23 0 48 wakes up
+23 0 55 falls asleep
+23 0 59 wakes up
+24 0 0 Guard #2741 begins shift
+24 0 23 falls asleep
+24 0 28 wakes up
+24 0 33 falls asleep
+24 0 50 wakes up
+24 23 50 Guard #1999 begins shift
+25 0 2 falls asleep
+25 0 59 wakes up
+25 23 51 Guard #2741 begins shift
+26 0 1 falls asleep
+26 0 2 wakes up
+26 0 31 falls asleep
+26 0 47 wakes up
+26 23 58 Guard #967 begins shift
+27 0 15 falls asleep
+27 0 34 wakes up
+27 0 52 falls asleep
+27 0 55 wakes up
+27 23 56 Guard #1151 begins shift
+28 0 20 falls asleep
+28 0 49 wakes up
+1 0 1 Guard #811 begins shift
+1 0 43 falls asleep
+1 0 56 wakes up
+2 0 2 Guard #811 begins shift
+2 0 16 falls asleep
+2 0 23 wakes up
+2 0 45 falls asleep
+2 0 51 wakes up
+2 0 55 falls asleep
+2 0 59 wakes up
+3 0 4 Guard #2741 begins shift
+3 0 18 falls asleep
+3 0 42 wakes up
+4 0 0 Guard #811 begins shift
+4 0 38 falls asleep
+4 0 56 wakes up
+5 0 1 Guard #967 begins shift
+5 0 18 falls asleep
+5 0 19 wakes up
+5 0 32 falls asleep
+5 0 56 wakes up
+6 0 0 Guard #1151 begins shift
+6 0 8 falls asleep
+6 0 28 wakes up
+6 0 41 falls asleep
+6 0 45 wakes up
+6 0 50 falls asleep
+6 0 57 wakes up
+7 0 1 Guard #2411 begins shift
+7 0 26 falls asleep
+7 0 57 wakes up
+7 23 58 Guard #2351 begins shift
+8 0 18 falls asleep
+8 0 42 wakes up
+8 23 57 Guard #967 begins shift
+9 0 12 falls asleep
+9 0 16 wakes up
+9 0 47 falls asleep
+9 0 55 wakes up
+9 23 59 Guard #241 begins shift
+11 0 0 Guard #2411 begins shift
+11 0 19 falls asleep
+11 0 31 wakes up
+11 0 35 falls asleep
+11 0 39 wakes up
+12 0 0 Guard #811 begins shift
+12 0 34 falls asleep
+12 0 43 wakes up
+12 0 52 falls asleep
+12 0 54 wakes up
+13 0 0 Guard #137 begins shift
+13 0 9 falls asleep
+13 0 56 wakes up
+14 0 2 Guard #2351 begins shift
+14 0 13 falls asleep
+14 0 14 wakes up
+14 0 18 falls asleep
+14 0 21 wakes up
+14 0 28 falls asleep
+14 0 31 wakes up
+14 0 36 falls asleep
+14 0 59 wakes up
+14 23 57 Guard #3347 begins shift
+15 0 12 falls asleep
+15 0 14 wakes up
+15 0 24 falls asleep
+15 0 50 wakes up
+15 23 56 Guard #2411 begins shift
+16 0 7 falls asleep
+16 0 25 wakes up
+16 0 33 falls asleep
+16 0 36 wakes up
+16 0 47 falls asleep
+16 0 51 wakes up
+16 23 59 Guard #3221 begins shift
+17 0 29 falls asleep
+17 0 40 wakes up
+18 0 3 Guard #503 begins shift
+18 0 6 falls asleep
+18 0 7 wakes up
+18 0 48 falls asleep
+18 0 49 wakes up
+18 23 57 Guard #1871 begins shift
+19 0 49 falls asleep
+19 0 54 wakes up
+20 0 0 Guard #967 begins shift
+20 0 7 falls asleep
+20 0 35 wakes up
+20 23 56 Guard #2441 begins shift
+22 0 1 Guard #631 begins shift
+22 0 8 falls asleep
+22 0 13 wakes up
+22 0 47 falls asleep
+22 0 57 wakes up
+22 23 57 Guard #83 begins shift
+23 0 41 falls asleep
+23 0 49 wakes up
+24 0 4 Guard #967 begins shift
+24 0 23 falls asleep
+24 0 39 wakes up
+24 0 42 falls asleep
+24 0 53 wakes up
+24 23 50 Guard #3221 begins shift
+25 0 3 falls asleep
+25 0 10 wakes up
+25 0 36 falls asleep
+25 0 55 wakes up
+26 0 0 Guard #137 begins shift
+26 0 38 falls asleep
+26 0 46 wakes up
+26 23 50 Guard #1151 begins shift
+27 0 0 falls asleep
+27 0 40 wakes up
+28 0 4 Guard #2351 begins shift
+28 0 6 falls asleep
+28 0 42 wakes up
+29 0 1 Guard #967 begins shift
+29 0 10 falls asleep
+29 0 23 wakes up
+29 0 37 falls asleep
+29 0 56 wakes up
+29 23 58 Guard #137 begins shift
+30 0 18 falls asleep
+30 0 47 wakes up
+31 0 1 Guard #631 begins shift
+31 0 13 falls asleep
+31 0 56 wakes up
+31 23 57 Guard #2411 begins shift
+1 0 20 falls asleep
+1 0 48 wakes up
+1 0 54 falls asleep
+1 0 56 wakes up
+1 23 50 Guard #1297 begins shift
+2 0 3 falls asleep
+2 0 49 wakes up
+3 0 4 Guard #2741 begins shift
+3 0 31 falls asleep
+3 0 40 wakes up
+3 0 48 falls asleep
+3 0 59 wakes up
+4 0 4 Guard #479 begins shift
+4 0 10 falls asleep
+4 0 13 wakes up
+4 0 29 falls asleep
+4 0 45 wakes up
+5 0 1 Guard #3221 begins shift
+5 0 21 falls asleep
+5 0 22 wakes up
+6 0 0 Guard #3347 begins shift
+6 0 10 falls asleep
+6 0 30 wakes up
+6 0 44 falls asleep
+6 0 47 wakes up
+6 0 50 falls asleep
+6 0 51 wakes up
+6 0 56 falls asleep
+6 0 57 wakes up
+7 0 0 Guard #479 begins shift
+7 0 32 falls asleep
+7 0 51 wakes up
+7 23 58 Guard #2741 begins shift
+8 0 30 falls asleep
+8 0 49 wakes up
+8 23 56 Guard #947 begins shift
+9 0 18 falls asleep
+9 0 51 wakes up
+9 23 57 Guard #1151 begins shift
+10 0 14 falls asleep
+10 0 51 wakes up
+10 23 56 Guard #1297 begins shift
+11 0 32 falls asleep
+11 0 49 wakes up
+11 0 52 falls asleep
+11 0 59 wakes up
+12 0 1 Guard #811 begins shift
+12 0 7 falls asleep
+12 0 15 wakes up
+12 0 19 falls asleep
+12 0 50 wakes up
+13 0 3 Guard #503 begins shift
+13 0 31 falls asleep
+13 0 38 wakes up
+13 0 42 falls asleep
+13 0 45 wakes up
+13 23 59 Guard #631 begins shift
+14 0 29 falls asleep
+14 0 39 wakes up
+15 0 4 Guard #1871 begins shift
+15 0 22 falls asleep
+15 0 27 wakes up
+15 0 30 falls asleep
+15 0 52 wakes up
+16 0 0 Guard #3347 begins shift
+16 0 6 falls asleep
+16 0 39 wakes up
+17 0 1 Guard #137 begins shift
+17 0 13 falls asleep
+17 0 24 wakes up
+17 0 42 falls asleep
+17 0 48 wakes up
+17 23 52 Guard #1297 begins shift
+18 0 4 falls asleep
+18 0 27 wakes up
+18 0 40 falls asleep
+18 0 50 wakes up
+18 23 56 Guard #83 begins shift
+19 0 11 falls asleep
+19 0 46 wakes up
+19 23 51 Guard #3251 begins shift
+20 0 1 falls asleep
+20 0 24 wakes up
+20 0 41 falls asleep
+20 0 50 wakes up
+20 23 58 Guard #1213 begins shift
+21 0 38 falls asleep
+21 0 53 wakes up
+21 23 58 Guard #2351 begins shift
+22 0 44 falls asleep
+22 0 57 wakes up
+23 0 0 Guard #1213 begins shift
+23 0 33 falls asleep
+23 0 38 wakes up
+23 0 47 falls asleep
+23 0 49 wakes up
+23 0 53 falls asleep
+23 0 59 wakes up
+24 0 4 Guard #1213 begins shift
+24 0 14 falls asleep
+24 0 25 wakes up
+24 0 35 falls asleep
+24 0 39 wakes up
+24 23 54 Guard #617 begins shift
+25 0 1 falls asleep
+25 0 58 wakes up
+26 0 4 Guard #503 begins shift
+26 0 33 falls asleep
+26 0 47 wakes up
+27 0 1 Guard #947 begins shift
+27 0 14 falls asleep
+27 0 25 wakes up
+27 0 36 falls asleep
+27 0 37 wakes up
+27 0 50 falls asleep
+27 0 55 wakes up
+28 0 2 Guard #3221 begins shift
+28 0 16 falls asleep
+28 0 34 wakes up
+28 0 50 falls asleep
+28 0 51 wakes up
+28 23 57 Guard #967 begins shift
+29 0 51 falls asleep
+29 0 59 wakes up
+29 23 48 Guard #2351 begins shift
+30 0 5 falls asleep
+30 0 57 wakes up
+1 0 2 Guard #3221 begins shift
+1 0 20 falls asleep
+1 0 26 wakes up
+2 0 2 Guard #617 begins shift
+2 0 27 falls asleep
+2 0 53 wakes up
+2 23 58 Guard #3433 begins shift
+4 0 2 Guard #137 begins shift
+4 0 43 falls asleep
+4 0 58 wakes up
+4 23 59 Guard #137 begins shift
+5 0 14 falls asleep
+5 0 47 wakes up
+5 0 54 falls asleep
+5 0 58 wakes up
+5 23 58 Guard #3221 begins shift
+6 0 45 falls asleep
+6 0 54 wakes up
+6 23 56 Guard #947 begins shift
+7 0 21 falls asleep
+7 0 46 wakes up
+7 0 49 falls asleep
+7 0 52 wakes up
+8 0 4 Guard #1871 begins shift
+8 0 44 falls asleep
+8 0 52 wakes up
+8 23 58 Guard #3251 begins shift
+9 0 28 falls asleep
+9 0 38 wakes up
+9 0 42 falls asleep
+9 0 48 wakes up
+9 0 51 falls asleep
+9 0 56 wakes up
+10 0 4 Guard #1297 begins shift
+10 0 43 falls asleep
+10 0 56 wakes up
+11 0 2 Guard #947 begins shift
+11 0 24 falls asleep
+11 0 55 wakes up
+11 23 59 Guard #83 begins shift
+12 0 11 falls asleep
+12 0 30 wakes up
+12 0 34 falls asleep
+12 0 59 wakes up
+12 23 59 Guard #2351 begins shift
+13 0 14 falls asleep
+13 0 21 wakes up
+13 0 30 falls asleep
+13 0 37 wakes up
+13 23 56 Guard #83 begins shift
+14 0 23 falls asleep
+14 0 42 wakes up
+15 0 2 Guard #479 begins shift
+15 0 23 falls asleep
+15 0 58 wakes up
+16 0 4 Guard #947 begins shift
+16 0 21 falls asleep
+16 0 36 wakes up
+16 0 39 falls asleep
+16 0 50 wakes up
+17 0 4 Guard #617 begins shift
+17 0 10 falls asleep
+17 0 40 wakes up
+17 23 59 Guard #3221 begins shift
+18 0 6 falls asleep
+18 0 46 wakes up
+19 0 0 Guard #137 begins shift
+19 0 25 falls asleep
+19 0 52 wakes up
+20 0 0 Guard #617 begins shift
+20 0 30 falls asleep
+20 0 42 wakes up
+20 0 48 falls asleep
+20 0 59 wakes up
+20 23 59 Guard #3433 begins shift
+22 0 0 Guard #3347 begins shift
+22 0 50 falls asleep
+22 0 59 wakes up
+23 0 3 Guard #3433 begins shift
+24 0 0 Guard #617 begins shift
+24 0 19 falls asleep
+24 0 30 wakes up
+25 0 3 Guard #947 begins shift
+25 0 6 falls asleep
+25 0 19 wakes up
+25 0 52 falls asleep
+25 0 57 wakes up
+26 0 4 Guard #503 begins shift
+26 0 48 falls asleep
+26 0 51 wakes up
+26 23 56 Guard #3251 begins shift
+27 0 23 falls asleep
+27 0 25 wakes up
+27 0 29 falls asleep
+27 0 47 wakes up
+28 0 2 Guard #83 begins shift
+28 0 19 falls asleep
+28 0 33 wakes up
+28 23 47 Guard #2411 begins shift
+29 0 3 falls asleep
+29 0 37 wakes up
+30 0 0 Guard #1999 begins shift
+30 0 12 falls asleep
+30 0 16 wakes up
+30 23 58 Guard #1871 begins shift
+31 0 46 falls asleep
+31 0 51 wakes up
+31 0 54 falls asleep
+31 0 56 wakes up
+1 0 2 Guard #3221 begins shift
+1 0 38 falls asleep
+1 0 46 wakes up
+1 23 57 Guard #631 begins shift
+2 0 28 falls asleep
+2 0 33 wakes up
+2 23 57 Guard #3347 begins shift
+3 0 10 falls asleep
+3 0 59 wakes up
+3 23 58 Guard #2351 begins shift
+4 0 30 falls asleep
+4 0 56 wakes up
+4 23 59 Guard #1871 begins shift
+5 0 14 falls asleep
+5 0 57 wakes up
+6 0 4 Guard #1297 begins shift
+6 0 29 falls asleep
+6 0 43 wakes up
+6 0 47 falls asleep
+6 0 56 wakes up
+7 0 3 Guard #1999 begins shift
+7 0 15 falls asleep
+7 0 50 wakes up
+7 23 59 Guard #947 begins shift
+8 0 28 falls asleep
+8 0 51 wakes up
+8 0 56 falls asleep
+8 0 57 wakes up
+9 0 3 Guard #479 begins shift
+9 0 56 falls asleep
+9 0 57 wakes up
+9 23 56 Guard #137 begins shift
+10 0 36 falls asleep
+10 0 42 wakes up
+10 0 46 falls asleep
+10 0 51 wakes up
+11 0 0 Guard #137 begins shift
+11 0 19 falls asleep
+11 0 51 wakes up
+11 23 56 Guard #947 begins shift
+12 0 57 falls asleep
+12 0 58 wakes up
+13 0 1 Guard #1871 begins shift
+13 0 20 falls asleep
+13 0 55 wakes up
+13 23 58 Guard #811 begins shift
+14 0 7 falls asleep
+14 0 15 wakes up
+14 0 33 falls asleep
+14 0 51 wakes up
+14 23 59 Guard #2351 begins shift
+15 0 14 falls asleep
+15 0 45 wakes up
+15 23 57 Guard #479 begins shift
+16 0 6 falls asleep
+16 0 48 wakes up
+16 0 51 falls asleep
+16 0 52 wakes up
+17 0 1 Guard #631 begins shift
+17 0 7 falls asleep
+17 0 42 wakes up
+18 0 2 Guard #3221 begins shift
+18 0 39 falls asleep
+18 0 52 wakes up
+18 23 56 Guard #1999 begins shift
+19 0 7 falls asleep
+19 0 59 wakes up
+20 0 3 Guard #3251 begins shift
+20 0 39 falls asleep
+20 0 58 wakes up
+21 0 0 Guard #617 begins shift
+21 0 12 falls asleep
+21 0 57 wakes up
+22 0 2 Guard #811 begins shift
+22 0 12 falls asleep
+22 0 36 wakes up
+22 0 42 falls asleep
+22 0 58 wakes up
+22 23 49 Guard #1297 begins shift
+23 0 1 falls asleep
+23 0 34 wakes up
+23 0 45 falls asleep
+23 0 51 wakes up
+23 23 46 Guard #3221 begins shift
+24 0 5 falls asleep
+24 0 54 wakes up
+24 23 57 Guard #503 begins shift
+25 0 15 falls asleep
+25 0 33 wakes up
+25 0 38 falls asleep
+25 0 49 wakes up
+26 0 0 Guard #811 begins shift
+26 0 23 falls asleep
+26 0 55 wakes up
+27 0 1 Guard #503 begins shift
+27 0 23 falls asleep
+27 0 42 wakes up
+28 0 1 Guard #3251 begins shift
+28 0 19 falls asleep
+28 0 53 wakes up
+28 23 54 Guard #137 begins shift
+29 0 1 falls asleep
+29 0 46 wakes up
+29 23 59 Guard #631 begins shift
+30 0 6 falls asleep
+30 0 43 wakes up
+30 23 57 Guard #3221 begins shift
+1 0 33 falls asleep
+1 0 44 wakes up
+1 23 57 Guard #1151 begins shift
+2 0 9 falls asleep
+2 0 10 wakes up
+2 0 23 falls asleep
+2 0 45 wakes up
+3 0 0 Guard #503 begins shift
+3 0 25 falls asleep
+3 0 36 wakes up
+4 0 4 Guard #3251 begins shift
+4 0 11 falls asleep
+4 0 21 wakes up
+4 0 29 falls asleep
+4 0 36 wakes up
+4 0 42 falls asleep
+4 0 54 wakes up
+4 23 59 Guard #1297 begins shift
+5 0 30 falls asleep
+5 0 51 wakes up
+6 0 1 Guard #2411 begins shift
+6 0 10 falls asleep
+6 0 25 wakes up
+6 0 51 falls asleep
+6 0 55 wakes up
+7 0 3 Guard #1871 begins shift
+7 0 47 falls asleep
+7 0 52 wakes up
+8 0 4 Guard #631 begins shift
+8 0 24 falls asleep
+8 0 54 wakes up
+9 0 1 Guard #3347 begins shift
+9 0 13 falls asleep
+9 0 48 wakes up
+9 0 57 falls asleep
+9 0 58 wakes up
+10 0 0 Guard #1871 begins shift
+10 0 44 falls asleep
+10 0 52 wakes up
+11 0 2 Guard #1871 begins shift
+11 0 40 falls asleep
+11 0 50 wakes up
+12 0 1 Guard #2411 begins shift
+12 0 13 falls asleep
+12 0 23 wakes up
+12 0 54 falls asleep
+12 0 56 wakes up
+12 23 56 Guard #2741 begins shift
+13 0 8 falls asleep
+13 0 47 wakes up
+13 0 54 falls asleep
+13 0 55 wakes up
+14 0 0 Guard #3347 begins shift
+14 0 11 falls asleep
+14 0 24 wakes up
+15 0 3 Guard #1151 begins shift
+15 0 19 falls asleep
+15 0 20 wakes up
+15 0 44 falls asleep
+15 0 59 wakes up
+16 0 0 Guard #3221 begins shift
+16 0 32 falls asleep
+16 0 41 wakes up
+16 23 56 Guard #2351 begins shift
+17 0 14 falls asleep
+17 0 40 wakes up
+17 0 48 falls asleep
+17 0 50 wakes up
+18 0 1 Guard #2351 begins shift
+18 0 30 falls asleep
+18 0 35 wakes up
+18 0 45 falls asleep
+18 0 58 wakes up
+18 23 58 Guard #617 begins shift
+19 0 32 falls asleep
+19 0 56 wakes up
+19 23 57 Guard #617 begins shift
+20 0 36 falls asleep
+20 0 45 wakes up
+21 0 0 Guard #479 begins shift
+21 0 17 falls asleep
+21 0 19 wakes up
+21 0 27 falls asleep
+21 0 32 wakes up
+21 0 39 falls asleep
+21 0 45 wakes up
+21 23 46 Guard #967 begins shift
+22 0 5 falls asleep
+22 0 59 wakes up
+23 0 4 Guard #479 begins shift
+23 0 53 falls asleep
+23 0 58 wakes up
+23 23 58 Guard #503 begins shift
+24 0 22 falls asleep
+24 0 51 wakes up
+24 23 50 Guard #1999 begins shift
+25 0 0 falls asleep
+25 0 48 wakes up
+26 0 0 Guard #3251 begins shift
+26 0 18 falls asleep
+26 0 54 wakes up
+26 23 56 Guard #617 begins shift
+27 0 21 falls asleep
+27 0 56 wakes up
+27 23 50 Guard #503 begins shift
+28 0 1 falls asleep
+28 0 23 wakes up
+28 0 40 falls asleep
+28 0 48 wakes up
+28 23 58 Guard #2411 begins shift
+29 0 19 falls asleep
+29 0 43 wakes up
+30 0 2 Guard #137 begins shift
+30 0 13 falls asleep
+30 0 54 wakes up
+30 23 59 Guard #2351 begins shift
+31 0 41 falls asleep
+31 0 48 wakes up
+1 0 3 Guard #479 begins shift
+1 0 26 falls asleep
+1 0 27 wakes up
+1 0 41 falls asleep
+1 0 43 wakes up
+2 0 0 Guard #137 begins shift
+2 0 34 falls asleep
+2 0 51 wakes up
+2 23 52 Guard #2411 begins shift
+3 0 2 falls asleep
+3 0 58 wakes up
+4 0 0 Guard #503 begins shift
+4 0 35 falls asleep
+4 0 48 wakes up
+4 23 59 Guard #3221 begins shift
+5 0 19 falls asleep
+5 0 59 wakes up
+5 23 57 Guard #3433 begins shift
+7 0 0 Guard #617 begins shift
+7 0 44 falls asleep
+7 0 52 wakes up
+7 23 48 Guard #967 begins shift
+8 0 0 falls asleep
+8 0 23 wakes up
+8 0 32 falls asleep
+8 0 44 wakes up
+9 0 3 Guard #1213 begins shift
+9 0 6 falls asleep
+9 0 56 wakes up
+10 0 1 Guard #1297 begins shift
+10 0 44 falls asleep
+10 0 55 wakes up
+10 23 58 Guard #2741 begins shift
+11 0 49 falls asleep
+11 0 57 wakes up
+11 23 53 Guard #137 begins shift
+12 0 4 falls asleep
+12 0 51 wakes up
+12 23 53 Guard #3347 begins shift
+13 0 2 falls asleep
+13 0 47 wakes up
+13 23 48 Guard #1213 begins shift
+14 0 2 falls asleep
+14 0 9 wakes up
+14 0 51 falls asleep
+14 0 54 wakes up
+14 0 57 falls asleep
+14 0 58 wakes up
+14 23 51 Guard #1999 begins shift
+15 0 5 falls asleep
+15 0 31 wakes up
+15 0 35 falls asleep
+15 0 42 wakes up
+15 0 52 falls asleep
+15 0 55 wakes up
+15 23 58 Guard #3347 begins shift
+16 0 10 falls asleep
+16 0 30 wakes up
+16 0 50 falls asleep
+16 0 55 wakes up
+17 0 1 Guard #503 begins shift
+17 0 37 falls asleep
+17 0 43 wakes up
+17 23 53 Guard #1151 begins shift
+18 0 4 falls asleep
+18 0 40 wakes up
+18 0 44 falls asleep
+18 0 48 wakes up
+18 23 58 Guard #811 begins shift
+19 0 22 falls asleep
+19 0 37 wakes up
+19 0 44 falls asleep
+19 0 47 wakes up
+19 0 53 falls asleep
+19 0 59 wakes up
+20 0 2 Guard #1297 begins shift
+20 0 30 falls asleep
+20 0 39 wakes up
+20 23 53 Guard #947 begins shift
+21 0 4 falls asleep
+21 0 42 wakes up
+21 0 48 falls asleep
+21 0 50 wakes up
+21 23 56 Guard #1871 begins shift
+22 0 7 falls asleep
+22 0 27 wakes up
+22 0 42 falls asleep
+22 0 46 wakes up
+22 0 49 falls asleep
+22 0 58 wakes up
+23 0 0 Guard #3251 begins shift
+23 0 25 falls asleep
+23 0 40 wakes up
+24 0 1 Guard #1999 begins shift
+24 0 15 falls asleep
+24 0 28 wakes up
+25 0 4 Guard #503 begins shift
+25 0 10 falls asleep
+25 0 39 wakes up
+25 23 56 Guard #83 begins shift
+26 0 8 falls asleep
+26 0 15 wakes up
+26 23 50 Guard #3251 begins shift
+27 0 5 falls asleep
+27 0 55 wakes up
+28 0 2 Guard #1871 begins shift
+28 0 45 falls asleep
+28 0 50 wakes up
+28 23 50 Guard #2351 begins shift
+29 0 5 falls asleep
+29 0 56 wakes up
+29 23 57 Guard #1871 begins shift
+30 0 10 falls asleep
+30 0 27 wakes up
+30 0 41 falls asleep
+30 0 43 wakes up
+30 0 47 falls asleep
+30 0 52 wakes up
+31 0 2 Guard #1871 begins shift
+31 0 18 falls asleep
+31 0 35 wakes up
+1 0 1 Guard #947 begins shift
+1 0 20 falls asleep
+1 0 40 wakes up
+1 0 44 falls asleep
+1 0 50 wakes up
+2 0 2 Guard #1871 begins shift
+2 0 18 falls asleep
+2 0 33 wakes up
+2 0 42 falls asleep
+2 0 51 wakes up
+2 23 57 Guard #967 begins shift
+3 0 11 falls asleep
+3 0 24 wakes up
+3 0 38 falls asleep
+3 0 40 wakes up
+3 23 50 Guard #479 begins shift
+4 0 0 falls asleep
+4 0 39 wakes up
+5 0 0 Guard #811 begins shift
+5 0 49 falls asleep
+5 0 51 wakes up
+6 0 3 Guard #947 begins shift
+6 0 11 falls asleep
+6 0 45 wakes up
+6 23 58 Guard #947 begins shift
+7 0 33 falls asleep
+7 0 35 wakes up
+7 0 40 falls asleep
+7 0 41 wakes up
+7 0 45 falls asleep
+7 0 55 wakes up
+8 0 3 Guard #3251 begins shift
+8 0 36 falls asleep
+8 0 49 wakes up
+9 0 0 Guard #811 begins shift
+9 0 6 falls asleep
+9 0 58 wakes up
+9 23 56 Guard #1871 begins shift
+10 0 10 falls asleep
+10 0 20 wakes up
+10 0 41 falls asleep
+10 0 56 wakes up
+10 23 59 Guard #241 begins shift
+12 0 0 Guard #3251 begins shift
+12 0 37 falls asleep
+12 0 40 wakes up
+12 0 44 falls asleep
+12 0 54 wakes up
+13 0 3 Guard #1213 begins shift
+13 0 50 falls asleep
+13 0 56 wakes up
+14 0 4 Guard #631 begins shift
+14 0 37 falls asleep
+14 0 45 wakes up
+15 0 2 Guard #2351 begins shift
+15 0 36 falls asleep
+15 0 40 wakes up
+15 0 43 falls asleep
+15 0 57 wakes up
+15 23 58 Guard #3221 begins shift
+16 0 21 falls asleep
+16 0 48 wakes up
+17 0 3 Guard #1871 begins shift
+17 0 14 falls asleep
+17 0 15 wakes up
+17 0 47 falls asleep
+17 0 49 wakes up
+17 23 58 Guard #1297 begins shift
+18 0 26 falls asleep
+18 0 29 wakes up
+18 0 32 falls asleep
+18 0 43 wakes up
+18 0 47 falls asleep
+18 0 58 wakes up
+18 23 56 Guard #2351 begins shift
+19 0 24 falls asleep
+19 0 37 wakes up
+19 23 57 Guard #1213 begins shift
+20 0 21 falls asleep
+20 0 49 wakes up
+21 0 2 Guard #1871 begins shift
+21 0 21 falls asleep
+21 0 59 wakes up
+21 23 53 Guard #3347 begins shift
+22 0 5 falls asleep
+22 0 12 wakes up
+22 0 24 falls asleep
+22 0 26 wakes up
+23 0 1 Guard #3347 begins shift
+23 0 38 falls asleep
+23 0 39 wakes up
+23 0 50 falls asleep
+23 0 58 wakes up
+23 23 59 Guard #617 begins shift
+24 0 32 falls asleep
+24 0 53 wakes up
+25 0 0 Guard #2351 begins shift
+25 0 28 falls asleep
+25 0 58 wakes up
+26 0 0 Guard #811 begins shift
+26 0 35 falls asleep
+26 0 52 wakes up
+27 0 4 Guard #1871 begins shift
+27 0 48 falls asleep
+27 0 53 wakes up
+28 0 1 Guard #83 begins shift
+28 0 12 falls asleep
+28 0 26 wakes up
+29 0 1 Guard #3347 begins shift
+29 0 10 falls asleep
+29 0 37 wakes up
+29 0 51 falls asleep
+29 0 57 wakes up
+30 0 0 Guard #137 begins shift
+30 0 22 falls asleep
+30 0 49 wakes up
+1 0 0 Guard #503 begins shift
+1 0 23 falls asleep
+1 0 39 wakes up
+2 0 2 Guard #479 begins shift
+2 0 10 falls asleep
+2 0 32 wakes up
+2 0 49 falls asleep
+2 0 54 wakes up
+2 0 57 falls asleep
+2 0 58 wakes up
+3 0 2 Guard #3347 begins shift
+3 0 11 falls asleep
+3 0 23 wakes up
+4 0 1 Guard #1297 begins shift
+4 0 35 falls asleep
+4 0 41 wakes up
+4 0 50 falls asleep
+4 0 51 wakes up
+5 0 0 Guard #1297 begins shift
+5 0 15 falls asleep
+5 0 54 wakes up
+5 23 59 Guard #3251 begins shift
+6 0 27 falls asleep
+6 0 59 wakes up
+6 23 58 Guard #617 begins shift
+7 0 43 falls asleep
+7 0 48 wakes up
+7 0 53 falls asleep
+7 0 58 wakes up
+7 23 47 Guard #83 begins shift
+8 0 2 falls asleep
+8 0 18 wakes up
+8 23 57 Guard #3347 begins shift
+9 0 26 falls asleep
+9 0 44 wakes up
+9 0 47 falls asleep
+9 0 49 wakes up
+9 23 56 Guard #137 begins shift
+10 0 24 falls asleep
+10 0 33 wakes up
+11 0 2 Guard #2741 begins shift
+11 0 29 falls asleep
+11 0 58 wakes up
+11 23 56 Guard #1871 begins shift
+12 0 19 falls asleep
+12 0 24 wakes up
+12 0 45 falls asleep
+12 0 46 wakes up
+12 23 57 Guard #2411 begins shift
+13 0 54 falls asleep
+13 0 59 wakes up
+14 0 4 Guard #2411 begins shift
+14 0 17 falls asleep
+14 0 57 wakes up
+14 23 56 Guard #83 begins shift
+15 0 30 falls asleep
+15 0 43 wakes up
+15 0 56 falls asleep
+15 0 58 wakes up
+16 0 1 Guard #631 begins shift
+16 0 18 falls asleep
+16 0 26 wakes up
+17 0 2 Guard #479 begins shift
+17 0 21 falls asleep
+17 0 32 wakes up
+18 0 3 Guard #2741 begins shift
+18 0 24 falls asleep
+18 0 58 wakes up
+18 23 54 Guard #811 begins shift
+19 0 0 falls asleep
+19 0 35 wakes up
+19 0 50 falls asleep
+19 0 55 wakes up
+19 23 56 Guard #947 begins shift
+20 0 14 falls asleep
+20 0 53 wakes up
+20 23 57 Guard #1871 begins shift
+21 0 31 falls asleep
+21 0 55 wakes up
+21 23 48 Guard #2411 begins shift
+22 0 4 falls asleep
+22 0 18 wakes up
+22 0 28 falls asleep
+22 0 37 wakes up
+22 0 48 falls asleep
+22 0 59 wakes up
+23 0 4 Guard #1151 begins shift
+23 0 7 falls asleep
+23 0 53 wakes up
+23 23 59 Guard #83 begins shift
+24 0 34 falls asleep
+24 0 57 wakes up
+25 0 2 Guard #2351 begins shift
+25 0 34 falls asleep
+25 0 45 wakes up
+25 0 49 falls asleep
+25 0 50 wakes up
+25 0 57 falls asleep
+25 0 59 wakes up
+26 0 2 Guard #1999 begins shift
+26 0 17 falls asleep
+26 0 42 wakes up
+26 0 56 falls asleep
+26 0 57 wakes up
+26 23 56 Guard #1999 begins shift
+27 0 50 falls asleep
+27 0 52 wakes up
+27 0 56 falls asleep
+27 0 58 wakes up
+27 23 57 Guard #1213 begins shift
+28 0 26 falls asleep
+28 0 55 wakes up
+28 23 58 Guard #947 begins shift
+29 0 16 falls asleep
+29 0 20 wakes up
+30 0 0 Guard #3251 begins shift
+30 0 31 falls asleep
+30 0 50 wakes up
+31 0 0 Guard #811 begins shift
+31 0 14 falls asleep
+31 0 37 wakes up
+31 0 50 falls asleep
+31 0 53 wakes up
+1 0 0 Guard #3347 begins shift
+1 0 11 falls asleep
+1 0 58 wakes up
+1 23 58 Guard #479 begins shift
+2 0 21 falls asleep
+2 0 44 wakes up
+2 23 57 Guard #2351 begins shift
+3 0 10 falls asleep
+3 0 48 wakes up
+4 0 1 Guard #137 begins shift
+4 0 33 falls asleep
+4 0 49 wakes up
+5 0 2 Guard #3251 begins shift
+5 0 6 falls asleep
+5 0 31 wakes up
+5 0 43 falls asleep
+5 0 48 wakes up
+5 0 57 falls asleep
+5 0 59 wakes up
+5 23 57 Guard #479 begins shift
+6 0 29 falls asleep
+6 0 48 wakes up
+7 0 4 Guard #1999 begins shift
+7 0 33 falls asleep
+7 0 40 wakes up
+7 0 47 falls asleep
+7 0 57 wakes up
+7 23 54 Guard #1999 begins shift
+8 0 0 falls asleep
+8 0 1 wakes up
+8 0 34 falls asleep
+8 0 56 wakes up
+9 0 4 Guard #2351 begins shift
+9 0 28 falls asleep
+9 0 55 wakes up
+10 0 0 Guard #1151 begins shift
+10 0 40 falls asleep
+10 0 57 wakes up
+11 0 2 Guard #2411 begins shift
+11 0 13 falls asleep
+11 0 33 wakes up
+12 0 1 Guard #479 begins shift
+12 0 26 falls asleep
+12 0 30 wakes up
+12 0 51 falls asleep
+12 0 53 wakes up
+13 0 4 Guard #2411 begins shift
+13 0 28 falls asleep
+13 0 38 wakes up
+13 23 56 Guard #947 begins shift
+14 0 38 falls asleep
+14 0 48 wakes up
+14 0 57 falls asleep
+14 0 59 wakes up
+14 23 58 Guard #3251 begins shift
+15 0 18 falls asleep
+15 0 42 wakes up
+15 0 48 falls asleep
+15 0 55 wakes up
+15 23 58 Guard #3347 begins shift
+16 0 55 falls asleep
+16 0 58 wakes up
+16 23 57 Guard #3347 begins shift
+17 0 25 falls asleep
+17 0 32 wakes up
+17 23 58 Guard #947 begins shift
+18 0 15 falls asleep
+18 0 21 wakes up
+18 23 57 Guard #479 begins shift
+19 0 11 falls asleep
+19 0 17 wakes up
+19 0 54 falls asleep
+19 0 59 wakes up
+20 0 0 Guard #1999 begins shift
+20 0 16 falls asleep
+20 0 58 wakes up
+21 0 0 Guard #3221 begins shift
+21 0 51 falls asleep
+21 0 53 wakes up
+21 0 56 falls asleep
+21 0 59 wakes up
+21 23 59 Guard #811 begins shift
+22 0 37 falls asleep
+22 0 52 wakes up
+22 0 56 falls asleep
+22 0 58 wakes up
+22 23 46 Guard #137 begins shift
+23 0 2 falls asleep
+23 0 7 wakes up
+23 0 27 falls asleep
+23 0 40 wakes up
+2351 16
+37616

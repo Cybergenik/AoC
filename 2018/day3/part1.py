@@ -13,8 +13,6 @@ def main() -> int:
         j_e, i_e = patch[3].split("x")
         j_e = int(j_e)
         i_e = int(i_e)
-        print(f'X: {i_s}->{i_e}')
-        print(f'Y: {j_s}->{j_e}')
         for i in range(i_s, i_s+i_e):
             for j in range(j_s, j_s+j_e):
                 if fabric[(i,j)] == 0:
