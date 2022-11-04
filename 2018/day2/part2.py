@@ -11,7 +11,6 @@ def main() -> int:
                 if l != r:
                     diff.append((indx,l))
             if len(diff) == 1:
-                print(content[i].strip(), content[j].strip())
                 correct_box = ""
                 for c in enumerate(content[i].strip()):
                     if c not in diff:

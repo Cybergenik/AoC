@@ -34,6 +34,9 @@ def main() -> int:
             for j in range(j_s, j_s+j_e):
                 if fabric[(i,j)] == -1:
                     overlapped = True
+                    break
+            if overlapped:
+                break
         if not overlapped:
             print(id)
             return
