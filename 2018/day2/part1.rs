@@ -16,8 +16,7 @@ fn main() -> std::io::Result<()> {
             if !counts.contains_key(&c) {
                 counts.insert(c, 0);
             }
-            *counts.get_mut(&c)
-                .unwrap() = *counts.get_mut(&c).unwrap()+1
+            *counts.get_mut(&c).unwrap() = counts[&c]+1
         }
         for (_, count) in counts {
             if !seen2 && count == 2 {
