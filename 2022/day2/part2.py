@@ -19,7 +19,6 @@ def main() -> int:
             count += w_scores[e]
         total += count
     print(total)
-
     
 if __name__ == "__main__":
     raise SystemExit(main())
