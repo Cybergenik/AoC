@@ -4,7 +4,6 @@
 #
 # By: Luciano Remes
 ##
-
 AOC=`date +%Y`1201
 s_AOC=`date +%s -d $AOC`
 today=`date +%s`
