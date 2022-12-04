@@ -5,27 +5,21 @@ use std::collections::HashMap;
 
 fn main() -> std::io::Result<()> {
     let rps_map = HashMap::from([
-        ("A", HashMap::from([
-            ("Y", 6),
-            ("X", 3),
-            ("Z", 0),
+        ("X", HashMap::from([
+            ("A", 3),
+            ("B", 1),
+            ("C", 2),
         ])),
-        ("B", HashMap::from([
-            ("Z", 6),
-            ("Y", 3),
-            ("X", 0),
+        ("Y", HashMap::from([
+            ("A", 4),
+            ("B", 5),
+            ("C", 6),
         ])),
-        ("C", HashMap::from([
-            ("X", 6),
-            ("Z", 3),
-            ("Y", 0),
+        ("Z", HashMap::from([
+            ("A", 8),
+            ("B", 9),
+            ("C", 7),
         ])),
-    ]);
-    
-    let rps_vals = HashMap::from([
-        ("X", 1),
-        ("Y", 2),
-        ("Z", 3),
     ]);
     let file = File::open("input.txt")?;
     let content = BufReader::new(file);
@@ -36,8 +30,7 @@ fn main() -> std::io::Result<()> {
             .trim()
             .split(" ")
             .collect();
-        total += rps_map[v[0]][v[1]];
-        total += rps_vals[v[1]];
+        total += rps_map[v[1]][v[0]];
     }
     println!("{}", total);
     Ok(())

@@ -1,6 +1,5 @@
 from collections import Counter
 
-
 def get_val(x: str):
     if x.islower():
         return (ord(x)-96)
@@ -18,9 +17,8 @@ def main() -> int:
         f = set(l[:len(l)//2])
         s = set(l[len(l)//2:])
         shared = f & s
-        if shared:
-            v = list(shared)[0]
-            total += get_val(v)
+        v = list(shared)[0]
+        total += get_val(v)
     print(total)
     
 if __name__ == "__main__":
