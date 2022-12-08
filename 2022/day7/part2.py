@@ -20,7 +20,14 @@ class FS:
                     self.fs[curr_l] += int(l[0])
                     curr_l = curr_l[:-1]
     
-    def min_dir(self):
+    def dirs_sizeN(self, N):
+        total = 0
+        for dir, data in self.fs.items():
+            if data <= N:
+                total += data
+        return total
+
+    def min_dir_del(self):
         min_dir = None
         free = 70000000 - (self.fs[("/",)])
         for dir, data in self.fs.items():
@@ -33,7 +40,10 @@ def main() -> int:
         content = f.readlines()   
 
     fs = FS(content)
-    print(fs.min_dir())
+    # Part 1:
+    #print(f'Part1: {fs.dirs_sizeN(100_000)}')
+    # Part 2:
+    print(f'Part2: {fs.min_dir_del()}')
     
 if __name__ == "__main__":
     raise SystemExit(main())
