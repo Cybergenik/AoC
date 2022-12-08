@@ -32,6 +32,7 @@ def main() -> int:
         content = f.readlines()   
 
     fs = FS(content)
+    print(fs.fs)
     print(fs.find_dirs())
     
 if __name__ == "__main__":

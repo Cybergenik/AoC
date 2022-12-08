@@ -16,7 +16,6 @@ def main() -> int:
     for l in content:
         i += 1
         l = l.strip()
-        # 10 // 2 = 5
         f = set(list(l))
         if not currs:
             currs = f

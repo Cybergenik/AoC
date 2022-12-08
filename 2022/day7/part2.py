@@ -41,7 +41,7 @@ def main() -> int:
 
     fs = FS(content)
     # Part 1:
-    #print(f'Part1: {fs.dirs_sizeN(100_000)}')
+    print(f'Part1: {fs.dirs_sizeN(100_000)}')
     # Part 2:
     print(f'Part2: {fs.min_dir_del()}')
     
