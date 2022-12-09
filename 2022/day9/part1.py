@@ -18,21 +18,21 @@ def main() -> int:
     with open("input.txt") as f:
         content = f.readlines()   
     visited = set()
-    knots = [(0,0) for _ in range(10)]
+    head = (0,0)
+    tail = (0,0)
     for l in content:
         inst, c = l.strip().split()
         for _ in range(int(c)):
             if inst == "R":
-                knots[0] = (knots[0][0]+1, knots[0][1])
+                head = (head[0]+1, head[1])
             elif inst == "L":
-                knots[0] = (knots[0][0]-1, knots[0][1])
+                head = (head[0]-1, head[1])
             elif inst == "U":
-                knots[0] = (knots[0][0], knots[0][1]+1)
+                head = (head[0], head[1]+1)
             elif inst == "D":
-                knots[0] = (knots[0][0], knots[0][1]-1)
-            for i in range(1, len(knots)):
-                knots[i] = new_tail(*knots[i], *knots[i-1])
-            visited.add(knots[-1])
+                head = (head[0], head[1]-1)
+            tail = new_tail(*tail, *head)
+            visited.add(tail)
     print(len(visited))
 
 if __name__ == "__main__":
