@@ -2,28 +2,30 @@
 def new_tail(x, y, zx, zy):
     xdiff = x-zx
     ydiff = y-zy
-    if abs(xdiff) == 2 and abs(ydiff) == 2:
-        if zx > x:
-            if zy > y:
-                return zx-1, zy-1
-            else:
-                return zx-1, zy+1
-        elif zx < x:
-            if zy > y:
-                return zx+1, zy-1
-            else:
-                return zx+1, zy+1
+
+    # x-1, y
+    # x+1, y
+    # x, y-1
+    # x, y+1
+    # x-1, y-1
+    # x+1, y-1
+    # x-1, y+1
+    # x+1, y+1
+    # x, y
     if abs(xdiff) == 2:
         if zx > x:
-            return zx-1, zy
+            xdiff = 1
         else:
-            return zx+1, zy
+            xdiff = -1
     if abs(ydiff) == 2:
         if zy > y:
-            return zx, zy-1
+            ydiff = 1
         else:
-            return zx, zy+1
-    return x,y
+            ydiff = -1
+    if abs(ydiff) == 2 or abs(xdiff) == 2:
+        return x+xdiff,y+ydiff
+    else:
+        return x,y
 
 def main() -> int:
     with open("input.txt") as f:
