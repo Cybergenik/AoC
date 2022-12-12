@@ -11,7 +11,7 @@ def main() -> int:
         count = 0
         if m == "X":
             count += l_scores[e]
-        if m == "Y":
+        elif m == "Y":
             count += 3
             count += t_scores[e]
         elif m == "Z":
