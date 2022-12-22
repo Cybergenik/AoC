@@ -29,6 +29,7 @@ fn main() -> std::io::Result<()> {
     ]);
     let file = File::open("input.txt")?;
     let content = BufReader::new(file);
+    content.lines()
     let mut total:i32 = 0;
     for line in content.lines() {
         let l = line.unwrap();

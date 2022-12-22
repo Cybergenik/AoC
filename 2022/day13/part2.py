@@ -38,7 +38,7 @@ class Packet:
     def __eq__(self, other):
         return compare(self.packet, other.packet) == 0
 
-def main() -> int:
+def main():
     with open("input.txt") as f:
         content = f.read()
 

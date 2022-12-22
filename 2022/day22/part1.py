@@ -19,7 +19,7 @@ def get_opp(loc, dir, map):
                 return (i, loc[1])
 
 def main():
-    with open("test.txt") as f:
+    with open("input.txt") as f:
         content = f.read()
     
     dirs = {
@@ -43,38 +43,45 @@ def main():
                     if loc == None:
                         loc = (i,j)
                     map[(i,j)] = cont[i][j] 
+    print(loc)
     for i in inst:
         if i.isnumeric():
+            print(i)
             for _ in range(int(i)):
                 x, y = loc
                 if dir == 0:
-                    if (x, y+1) not in map:
-                        loc = get_opp(loc, dir, map)
-                    elif map[(x, y+1)] == '#':
+                    n_loc = (x, y+1)
+                    if n_loc not in map:
+                        n_loc = get_opp(loc, dir, map)
+                    if map[n_loc] == '#':
                         break
                     else:
-                        loc = (x, y+1)
+                        loc = n_loc
                 elif dir == 1:
-                    if (x+1, y) not in map:
-                        loc = get_opp(loc, dir, map)
-                    elif map[(x+1, y)] == '#':
+                    n_loc = (x+1, y)
+                    if n_loc not in map:
+                        n_loc = get_opp(loc, dir, map)
+                    if map[n_loc] == '#':
                         break
                     else:
-                        loc = (x+1, y)
+                        loc = n_loc
                 elif dir == 2:
-                    if (x, y-1) not in map:
-                        loc = get_opp(loc, dir, map)
-                    elif map[(x, y-1)] == '#':
+                    n_loc = (x, y-1)
+                    if n_loc not in map:
+                        n_loc = get_opp(loc, dir, map)
+                    if map[n_loc] == '#':
                         break
                     else:
-                        loc = (x, y-1)
+                        loc = n_loc
                 elif dir == 3:
-                    if (x-1, y) not in map:
-                        loc = get_opp(loc, dir, map)
-                    elif map[(x-1, y)] == '#':
+                    n_loc = (x-1, y)
+                    if n_loc not in map:
+                        n_loc = get_opp(loc, dir, map)
+                    if map[n_loc] == '#':
                         break
                     else:
-                        loc = (x-1, y)
+                        loc = n_loc
+                print(loc)
         elif i in {"R", "L"}:
             if i == "R":
                 dir = (dir+1) % 4
