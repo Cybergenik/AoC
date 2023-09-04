@@ -1,39 +1,35 @@
-use std::fs::File;
-use std::io::BufReader;
-use std::io::prelude::*;
-use std::collections::{HashSet};
+use std::collections::HashSet;
+use std::io::Result;
 
-fn get_val(x:char) -> u32{
+fn get_val(x: char) -> u32 {
     let c = x as u32;
-    if x.is_lowercase(){
-        return c-96;
+    match x.is_lowercase() {
+        true => c - 96,
+        false => c - 65 + 27
     }
-    return (c-65)+27;
 }
 
-fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
-    let content = BufReader::new(file);
-    let mut total:u32 = 0;
-    let mut i = 0;
-    let mut group: Option<&HashSet<&char>> = None;
-    for line in content.lines().map(|l| l.unwrap()) {
-        let l = line.trim();
-        i += 1;
-        let mid:usize = l.len()/2;
-        let c_set = String::from(&l[..]).chars().collect::<HashSet<&char>>();
-        if group == None {
-            group = Some(&c_set);
+fn main() -> Result<()> {
+    let content = std::fs::read_to_string("input.txt")?;
+
+    let mut total = 0;
+    let mut group = HashSet::new();
+
+    let lines = content.lines().map(str::trim).enumerate();
+
+    for (i, line) in lines {
+        let char_set = line.chars().collect();
+        if group.is_empty() {
+            group = char_set;
         } else {
-            group = Some(&HashSet::from(group.unwrap().intersection(&c_set).collect::<HashSet<&char>>()));
+            group = group.intersection(&char_set).copied().collect();
         }
+        let i = i+1;
         if i % 3 == 0 {
-            for c in group.unwrap() {
-                total += get_val(**c);
-            }
-            group = None;
+            total += group.drain().map(get_val).sum::<u32>();
         }
     }
-    println!("{}", total);
+
+    println!("{total}");
     Ok(())
 }

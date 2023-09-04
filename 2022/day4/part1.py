@@ -1,4 +1,3 @@
-
 def get_val(x: str):
     if x.islower():
         return (ord(x)-96)
