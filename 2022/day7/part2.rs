@@ -5,13 +5,15 @@ use std::io::Result;
 struct FS<'a> {
     fs: BTreeMap<LinkedList<&'a str>, u32>,
     location: LinkedList<&'a str>,
+    size: u32,
 }
 
 impl<'a> FS<'a> {
-    pub fn new(content: &'a String) -> Self {
+    pub fn new(content: &'a String, size: u32) -> Self {
         let mut filesystem = FS{
             fs: BTreeMap::new(),
             location: LinkedList::new(),
+            size: size,
         };
         for line in content.lines() {
             let com = line.trim().split(" ").collect::<Vec<&str>>();
@@ -38,22 +40,34 @@ impl<'a> FS<'a> {
         filesystem
     }
 
-    pub fn find_dirs(&self) -> u32{
+    pub fn dir_sizen(&self, target_size: u32) -> u32{
         let mut total = 0;
-        for data in self.fs.values() {
-            if *data <= 100_000 {
-                total += data
+        for size in self.fs.values() {
+            if *size <= target_size {
+                total += size
             }
         }
         total
+    }
+
+    pub fn min_del(&self, free_size: u32) -> u32{
+        let mut min_dir = self.size;
+        let root_dir = LinkedList::from(["/"]);
+        let free = self.size - self.fs[&root_dir];
+        for size in self.fs.values() {
+            if free+size >= free_size && *size < min_dir{
+                min_dir = *size
+            }
+        }
+        min_dir
     }
 }
 
 fn main() -> Result<()> {
     let content = std::fs::read_to_string("input.txt")?;
 
-    let fs = FS::new(&content);
-    let size = fs.find_dirs();
-    println!("{size}");
+    let fs = FS::new(&content, 70_000_000);
+    println!("Part 1: {}", fs.dir_sizen(100_000));
+    println!("Part 2: {}", fs.min_del(30_000_000));
     Ok(())
 }
