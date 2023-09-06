@@ -2,4 +2,4 @@
 
 set -xe
 
-rustc part1.rs && ./part1 && rm -f part1
+rustc part2.rs && ./part2 && rm -f part2

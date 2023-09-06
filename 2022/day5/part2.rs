@@ -53,10 +53,9 @@ fn main() -> Result<()> {
             Some('o') => {
                 let m_action = parse_move_row(line);
                 //println!("    Moves:\n    {m_action:?}");
-                for _ in 0..m_action.count {
-                    let c = stacks[m_action.from].pop().unwrap();
-                    stacks[m_action.dest].push(c);
-                }
+                let len = stacks[m_action.from].len()-m_action.count;
+                let crates = stacks[m_action.from].split_off(len);
+                stacks[m_action.dest].extend_from_slice(&crates);
             },
             _ => {
                 let actions = parse_stack_row(line);
