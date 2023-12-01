@@ -1,26 +1,36 @@
-use std::fs::File;
-use std::io::BufReader;
-use std::io::prelude::*;
+use std::collections::HashSet;
+use std::io::Result;
 
-fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
-    let content = BufReader::new(file);
-    let mut total:u32 = 0;
-    for line in content.lines().map(|l| l.unwrap()) {
-        let (left, right) = line.trim().split_once(",").unwrap();
-        let (lstart, lend) = left
-            .split_once("-")
-            .map(|(s, e)| (s.parse::<u32>().unwrap(), e.parse::<u32>().unwrap()))
-            .unwrap();
-        let (rstart, rend) = right
-            .split_once("-")
-            .map(|(s, e)| (s.parse::<u32>().unwrap(), e.parse::<u32>().unwrap()))
-            .unwrap();
-        if (lstart >= rstart && lend <= rend) ||
-            (rstart >= lstart && rend <= lend) {
-            total += 1;
+fn main() -> Result<()> {
+    let content = std::fs::read_to_string("input.txt")?;
+    
+    let mut total = 0;
+    for (_, line) in content.lines().map(str::trim).enumerate() {
+        if let Some((l, r)) = line.split_once(",") {
+            let ls:u8;
+            let le:u8;
+            let rs:u8;
+            let re:u8;
+            let (l_s, l_e) = l.split_once("-").expect("Fuck you");
+            ls = l_s.parse::<u8>().expect("Fuck Me");
+            le = l_e.parse::<u8>().expect("Fuck Me");
+            let (r_s, r_e) = r.split_once("-").expect("Fuck you");
+            rs = r_s.parse::<u8>().expect("Fuck Me");
+            re = r_e.parse::<u8>().expect("Fuck Me");
+            let mut l_set = HashSet::new();
+            let mut r_set = HashSet::new();
+            for i in ls..le+1 {
+                l_set.insert(i);
+            }
+            for i in rs..re+1 {
+                r_set.insert(i);
+            }
+            if l_set.is_subset(&r_set) || r_set.is_subset(&l_set) {
+                total = total+1;
+            }
         }
     }
-    println!("{}", total);
+    
+    println!("{total}");
     Ok(())
 }

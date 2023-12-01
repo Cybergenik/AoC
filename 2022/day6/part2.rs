@@ -1,16 +1,20 @@
-use std::fs::File;
-use std::io::{BufReader};
 use std::collections::{HashSet};
-use std::io::prelude::*;
+use std::io::Result;
 
-fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
-    let line = BufReader::new(file).lines().nth(0).unwrap()?;
-    for i in 14..line.len() {
-        let set = line[i-14..i].chars().collect::<HashSet<char>>();
-        if set.len() == 14 {
-            println!("{i}");
-            break;
+fn is_start_message(slice: &str) -> bool {
+    return slice.len() == slice.chars().collect::<HashSet<char>>().len()
+}
+
+fn main() -> Result<()> {
+    const N:usize = 14;
+    let content = std::fs::read_to_string("input.txt")?;
+
+    for line in content.lines() {
+        for i in N..line.trim().len() {
+            if is_start_message(&line[i-N..i]) {
+                println!("{i}");
+                return Ok(())
+            }
         }
     }
     Ok(())

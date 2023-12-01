@@ -22,7 +22,7 @@ class FS:
     
     def find_dirs(self):
         total = 0
-        for dir, data in self.fs.items():
+        for data in self.fs.values():
             if data <= 100000:
                 total += data
         return total
@@ -32,8 +32,9 @@ def main() -> int:
         content = f.readlines()   
 
     fs = FS(content)
-    print(fs.fs)
+    #print(fs.fs)
     print(fs.find_dirs())
+    return 0
     
 if __name__ == "__main__":
     raise SystemExit(main())

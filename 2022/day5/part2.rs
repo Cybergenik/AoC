@@ -1,51 +1,76 @@
-use std::fs::File;
-use std::io::{BufReader};
-use std::io::prelude::*;
+use std::io::Result;
 
-fn parse_stack(stacks: &mut Vec<Vec<char>>, line: String) {
-    let mut idx = 0;
-    for (i, c) in line.chars().enumerate() {
-        if (i+1) % 4 == 0 {
-            idx += 1;
-        }
-        if c.is_ascii_alphabetic() {
-            while idx >= stacks.len() { stacks.push(vec![]); }
-            stacks[idx].push(c);
-        }
+#[derive(Debug)]
+struct MoveAction {
+    from: usize,
+    dest: usize,
+    count: usize,
+}
+
+#[derive(Debug)]
+struct StackAction {
+    dest: usize,
+    c: char,
+}
+
+fn parse_stack_row(line: &str) -> Vec<StackAction> {
+    line.chars()
+        .enumerate()
+        .filter(|(_, c)| c.is_ascii_alphabetic()) 
+        .map(|(i, c)| StackAction{ dest: ((i+3)/4)-1, c: c })
+        .collect()
+}
+
+fn parse_move_row(line: &str) -> MoveAction {
+    let action = line.split(" ")
+        .filter(|x| x.chars().nth(0).unwrap().is_ascii_digit())
+        .map(|x| x.parse::<usize>().unwrap())
+        .collect::<Vec::<usize>>();
+    MoveAction{
+        from: action[1]-1,
+        dest: action[2]-1,
+        count: action[0],
     }
 }
 
-fn parse_command(stacks: &mut Vec<Vec<char>>, line: String) {
-    //parse
-    let elements = line.split(" ").collect::<Vec<&str>>();
-    let amount = elements[1].parse::<usize>().unwrap();
-    let from = elements[3].parse::<usize>().unwrap() - 1;
-    let to = elements[5].parse::<usize>().unwrap() - 1;
-    //move
-    let range = stacks[from].len()-amount..;
-    let slice = stacks[from].drain(range).collect::<Vec<_>>();
-    stacks[to].extend(slice);
-}
+fn main() -> Result<()> {
+    const N:usize = 9;
+    let content = std::fs::read_to_string("input.txt")?;
 
-fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
-    let content = BufReader::new(file);
-    let mut stacks = Vec::new();
-    for line in content.lines().map(|l| l.unwrap()) {
-        match line.chars().nth(0) {
-            Some(' ') | Some('[') => parse_stack(&mut stacks, line),
-            Some('m') => parse_command(&mut stacks, line),
-            None => {
-                let mut new_stacks = Vec::new();
-                for stack in stacks {
-                    new_stacks.push(stack.iter().rev().map(|x| x.to_owned()).collect());
+    let mut stacks = Vec::<Vec<char>>::new();
+    while stacks.len() < N { 
+        stacks.push(Vec::new())
+    }
+    for line in content.lines() {
+        if line == ""{
+            continue;
+        }
+        //println!("Crates:\n{stacks:?}");
+        match line.chars().nth(1) {
+            Some('1') => {
+                stacks = stacks.iter().map(|x| x.iter().rev().cloned().collect()).collect()
+            },
+            Some('o') => {
+                let m_action = parse_move_row(line);
+                //println!("    Moves:\n    {m_action:?}");
+                let len = stacks[m_action.from].len()-m_action.count;
+                let crates = stacks[m_action.from].split_off(len);
+                stacks[m_action.dest].extend_from_slice(&crates);
+            },
+            _ => {
+                let actions = parse_stack_row(line);
+                //println!("    Stacks:\n    {actions:?}");
+                for s_action in actions {
+                    stacks[s_action.dest].push(s_action.c)
                 }
-                stacks = new_stacks;
-            }
-            _ => ()
+            },
         }
     }
-    let letters: String = stacks.iter().map(|x| x.last().to_owned().unwrap()).collect();
-    println!("{letters}");
+    
+    println!("");
+    for stack in stacks {
+        print!("{}", stack.last().unwrap())
+    }
+    println!("");
     Ok(())
 }
