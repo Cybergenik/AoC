@@ -1,4 +1,3 @@
-
 def parse(line: str):
     currc = ""
     i = 0
@@ -10,7 +9,7 @@ def parse(line: str):
         if c != " ":
             currc += c
 
-def main() -> int:
+def main():
     with open("input.txt") as f:
         content = f.readlines()   
     
@@ -18,6 +17,7 @@ def main() -> int:
     for l in content:
         if l[0] == "[":
             layer = list(parse(l))
+            print(layer)
             for i, crate in enumerate(layer):
                 if crate != '':
                     while i >= len(stacks):

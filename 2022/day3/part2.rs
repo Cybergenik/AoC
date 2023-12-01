@@ -16,20 +16,22 @@ fn main() -> std::io::Result<()> {
     let content = BufReader::new(file);
     let mut total:u32 = 0;
     let mut i = 0;
-    let mut group: Option<&HashSet<&char>> = None;
+    let mut group: Option<HashSet<char>> = None;
     for line in content.lines().map(|l| l.unwrap()) {
         let l = line.trim();
         i += 1;
-        let mid:usize = l.len()/2;
-        let c_set = String::from(&l[..]).chars().collect::<HashSet<&char>>();
+        let c_set = String::from(&l[..]).chars().collect::<HashSet<char>>();
         if group == None {
-            group = Some(&c_set);
+            group = Some(c_set);
         } else {
-            group = Some(&HashSet::from(group.unwrap().intersection(&c_set).collect::<HashSet<&char>>()));
+            group = Some(HashSet::from(group.unwrap()
+                                        .intersection(&c_set)
+                                        .map(|x| *x)
+                                        .collect::<HashSet<char>>()));
         }
         if i % 3 == 0 {
             for c in group.unwrap() {
-                total += get_val(**c);
+                total += get_val(c);
             }
             group = None;
         }

@@ -1,5 +1,4 @@
-
-def main() -> int:
+def main():
     with open("input.txt") as f:
         content = f.readlines()   
     content = content[0]

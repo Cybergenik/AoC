@@ -16,7 +16,7 @@ def pour_sand(walls: set, lowest_wall: tuple):
             curr_grain = (500, 0)
     return total
 
-def main() -> int:
+def main():
     with open("input.txt") as f:
         content = f.readlines()
     walls = set()

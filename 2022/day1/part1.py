@@ -1,5 +1,5 @@
 
-def main() -> int:
+def main():
     with open("input.txt") as f:
         content = f.readlines()
     max_ = 0
