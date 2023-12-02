@@ -11,15 +11,13 @@ def main():
     for l in content:
         l = l.strip()
         num = ""
+        last = ""
         for c in l:
-            if str(c).isnumeric():
-                num += c
-                break
-        for c in l[::-1]:
             if c.isnumeric():
-                num += c
-                break
-        total += int(num)
+                if num == "":
+                    num += c
+                last = c
+        total += int(num+last)
     print(total)
     
 if __name__ == "__main__":
