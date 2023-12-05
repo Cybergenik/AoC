@@ -1,51 +1,60 @@
 #!/usr/local/bin/python3
 
-maps = []
-
 def get_overlap(r1, r2):
     s1, e1 = r1
     s2, e2 = r2
     # Check for no overlap
     if e1 < s2 or e2 < s1:
-        return None  # No overlap
-
+        return None
     return (max(s1, s2), min(e1, e2))
 
 class Mapping:
     def __init__(self):
         self.ranges = []
-        self.maps = {}
     def add_map_range(self, src, dest, rng):
-        self.ranges.append((src, src+rng))
-        self.maps[src] = dest
-    def get_range(self, rng):
-        for r2 in self.ranges:
-            overlap = get_overlap(rng, r2)
+        self.ranges.append((src, dest, rng))
+        self.ranges = sorted(self.ranges)
+    def get_ranges(self, src_rng):
+        rngs = []
+        prev = src_rng[0]
+        for src, dest, rng in self.ranges:
+            overlap = get_overlap(src_rng, (src, src+rng))
             if overlap:
-                start = self.maps[r2[0]] + (overlap[0] - r2[0])
-                end = start + (overlap[1] - overlap[0])
-                return (start, end)
-        return rng
-    def get_ranges(self, src_ranges):
-        return [self.get_range(r) for r in src_ranges]
-    def get_min(self):
-        return min(self.maps.keys(), key=lambda x: self.maps[x])
+                start = dest + (overlap[0] - src)
+                nrng = abs(overlap[1] - overlap[0])
+                # add non-mapped range
+                if overlap[0] > prev:
+                    rngs.append((prev, overlap[0]))
+                prev = overlap[1]
+                rngs.append((start, start+nrng))
+        if prev < src_rng[1]:
+            rngs.append((prev, src_rng[1]))
+        return rngs
+    def get_mapping(self, src_ranges):
+        return [ss for s in src_ranges for ss in self.get_ranges(s)]
 
-def get_min(x):
-    m1 = maps[0].get_ranges(x)
-    m2 = maps[1].get_ranges(m1)
-    m3 = maps[2].get_ranges(m2)
-    m4 = maps[3].get_ranges(m3)
-    m5 = maps[4].get_ranges(m4)
-    m6 = maps[5].get_ranges(m5)
-    m7 = maps[6].get_ranges(m6)
-    print(m7)
+def get_min(x, maps):
+    print("Getting Seed -> Soil...")
+    m1 = maps[0].get_mapping(x)
+    print("Getting Soil -> Fertilizer...")
+    m2 = maps[1].get_mapping(m1)
+    print("Getting Fertilizer -> Water...")
+    m3 = maps[2].get_mapping(m2)
+    print("Getting Water -> Light...")
+    m4 = maps[3].get_mapping(m3)
+    print("Getting Light -> Temperature...")
+    m5 = maps[4].get_mapping(m4)
+    print("Getting Temperature -> Humidity...")
+    m6 = maps[5].get_mapping(m5)
+    print("Getting Humidity -> Location...")
+    m7 = maps[6].get_mapping(m6)
     return min(m7)
 
 def main():
-    with open("test.txt") as f:
+    with open("input.txt") as f:
         content = f.readlines()
 
+    maps = []
     seeds = []
     i = 0
     while i < len(content):
@@ -70,7 +79,7 @@ def main():
             maps.append(map)
         i += 1
 
-    print(get_min(seeds))
+    print(f'Min location of initial seed range: {get_min(seeds, maps)[0]}')
 
 if __name__ == "__main__":
     raise SystemExit(main())
