@@ -3,6 +3,7 @@ package main
 import (
     "os"
     "fmt"
+    "time"
     "strings"
 )
 
@@ -50,7 +51,7 @@ func LCM(a, b int) int {
     return  a * b / d
 }
 
-func steps_parallel(currs []string, inst string, g map[string]Tuple){
+func steps_parallel(currs []string, inst string, g map[string]Tuple) int{
     ch := make(chan int)
     for _, c := range currs {
         go func(c string, inst string, g map[string]Tuple){
@@ -62,18 +63,18 @@ func steps_parallel(currs []string, inst string, g map[string]Tuple){
     for i := 2; i < len(currs); i++{
         lcm = LCM(lcm, <-ch)
     }
-    fmt.Printf("%d\n", lcm)
+    return lcm
 }
 
-func steps(currs []string, inst string, g map[string]Tuple){
+func steps(currs []string, inst string, g map[string]Tuple) int{
     steps := []int{}
     for _, c := range currs {
         steps = append(steps, find_Z(c,inst, g))
     }
-    fmt.Printf("%d\n", LCM_N(steps...))
+    return LCM_N(steps...)
 }
 
-func main(){
+func solver() int{
     file, _ := os.ReadFile("input.txt")
 
     g := map[string]Tuple{}
@@ -94,5 +95,20 @@ func main(){
     }
 
     //steps(currs, inst, g)
-    steps_parallel(currs, inst, g)
+    return steps_parallel(currs, inst, g)
+}
+
+func main(){
+    N := 1000
+    total := int64(0)
+    ave := int64(0)
+    for i := 1; i <= N; i++ {
+        start_t := time.Now()
+        solver()
+        end_t := time.Now()
+        delta_t := end_t.Sub(start_t).Microseconds()
+        total += delta_t
+        ave = total/int64(i)
+    }
+    fmt.Printf("Average microseconds, N = %d: %dμs\n", N, ave)
 }
