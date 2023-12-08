@@ -27,39 +27,42 @@ func find_Z(n string, inst string, g map[string]Tuple) int {
     return total
 }
 
-func GCD(a, b int) int {
-	for b != 0 {
-		t := b
-		b = a % b
-		a = t
-	}
-	return a
-}
+func LCM_N(ints ...int) int {
+	result := LCM(ints[0], ints[1])
 
-func LCM(a, b int, integers ...int) int {
-	result := a * b / GCD(a, b)
-
-	for i := 0; i < len(integers); i++ {
-		result = LCM(result, integers[i])
+	for i := 2; i < len(ints); i++ {
+		result = LCM(result, ints[i])
 	}
 
 	return result
 }
 
+func LCM(a, b int) int {
+    //GCM
+    c := b
+    d := a
+    for c != 0 {
+        t := c
+        c = d % c
+        d = t
+    }
+    //LCM
+    return  a * b / d
+}
+
 func steps_parallel(currs []string, inst string, g map[string]Tuple){
-    steps := []int{}
     ch := make(chan int)
     for _, c := range currs {
         go func(c string, inst string, g map[string]Tuple){
             ch<-find_Z(c,inst, g)
         }(c, inst, g)
     }
-
-    for range currs{
-        steps = append(steps, <-ch)
+    
+    lcm := LCM(<-ch, <-ch)
+    for i := 2; i < len(currs); i++{
+        lcm = LCM(lcm, <-ch)
     }
-
-    fmt.Printf("%d\n", LCM(steps[0], steps[1], steps[2:]...))
+    fmt.Printf("%d\n", lcm)
 }
 
 func steps(currs []string, inst string, g map[string]Tuple){
@@ -67,15 +70,11 @@ func steps(currs []string, inst string, g map[string]Tuple){
     for _, c := range currs {
         steps = append(steps, find_Z(c,inst, g))
     }
-    fmt.Printf("%d\n", LCM(steps[0], steps[1], steps[2:]...))
+    fmt.Printf("%d\n", LCM_N(steps...))
 }
 
 func main(){
-    file, err := os.ReadFile("input.txt")
-    if err != nil{
-        fmt.Println("Couldn't open input")
-        os.Exit(-1)
-    }
+    file, _ := os.ReadFile("input.txt")
 
     g := map[string]Tuple{}
     currs := []string{}
@@ -93,8 +92,7 @@ func main(){
             currs = append(currs, name)
         }
     }
-    
+
     //steps(currs, inst, g)
     steps_parallel(currs, inst, g)
-
 }
