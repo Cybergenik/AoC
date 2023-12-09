@@ -34,9 +34,11 @@ class Cards:
             return True
         elif self.type > o.type:
             return False
-        ordering = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
+        ordering = {c: i for i,c in enumerate(('2', '3', '4', '5', '6', '7',
+                                               '8', '9', 'T', 'J', 'Q', 'K',
+                                               'A'))}
         for i in range(len(self.cards)):
-            ord1, ord2 = ordering.index(self.cards[i]), ordering.index(o.cards[i])
+            ord1, ord2 = ordering[self.cards[i]], ordering[o.cards[i]]
             if ord1 < ord2:
                 return True
             elif ord1 > ord2:
