@@ -20,20 +20,19 @@ def find_perms(line, i, prev, arr):
         i += 1
     if i < len(line) and len(arr) > 0:
         total = 0
-        if prev == "#" and arr[0] > 0:
+        if arr[0] == 0:
+            total += find_perms(line, i+1, ".", arr[1:])
+        elif prev == "#" and arr[0] > 0:
             arr1 = copy(arr)
             arr1[0] -= 1
             total += find_perms(line, i+1, "#", arr1)
-        elif prev == "#" and arr[0] == 0:
-            total += find_perms(line, i+1, ".", arr[1:])
         else:
             arr1 = copy(arr)
             arr1[0] -= 1
             total += find_perms(line, i+1, "#", arr1)
             total += find_perms(line, i+1, ".", arr)
         return total
-    return 1
-
+    return len(arr) == 0 or (len(arr) == 1 and arr[0] == 0)
         
 def main():
     with open("test.txt") as f:
@@ -51,7 +50,6 @@ def main():
             pattern.extend(OGP)
             arr.extend(OGR)
         juice = find_perms(pattern, 0, ".", arr)
-        print(juice)
         total += juice
     
     print(total)
