@@ -1,6 +1,5 @@
 #!/usr/local/bin/python3
 
-from collections import defaultdict
 from tqdm import tqdm
 
 def count(map, N, M):
@@ -19,7 +18,7 @@ def roll_cycle(map, N, M):
             if map[curr] == "O":
                 while curr[0] > 0:
                     up = (curr[0]-1, curr[1])
-                    if map[up] == ".":
+                    if map.get(up, "") == ".":
                         map[up] = "O"
                         map[curr] = "."
                     else:
@@ -32,7 +31,7 @@ def roll_cycle(map, N, M):
             if map[curr] == "O":
                 while curr[1] > 0:
                     left = (curr[0], curr[1]-1)
-                    if map[left] == ".":
+                    if map.get(left, "") == ".":
                         map[left] = "O"
                         map[curr] = "."
                     else:
@@ -45,7 +44,7 @@ def roll_cycle(map, N, M):
             if map[curr] == "O":
                 while curr[0] < N:
                     down = (curr[0]+1, curr[1])
-                    if map[down] == ".":
+                    if map.get(down, "") == ".":
                         map[down] = "O"
                         map[curr] = "."
                     else:
@@ -58,7 +57,7 @@ def roll_cycle(map, N, M):
             if map[curr] == "O":
                 while curr[1] < M:
                     right = (curr[0], curr[1]+1)
-                    if map[right] == ".":
+                    if map.get(right, "") == ".":
                         map[right] = "O"
                         map[curr] = "."
                     else:
@@ -75,7 +74,7 @@ def print_map(map, N, M):
 def main():
     with open("input.txt") as f:
         content = f.readlines()
-    map = defaultdict(lambda: "")
+    map = {} 
     N = len(content)
     M = len(content[0].strip())
     for x, l in enumerate(content):
