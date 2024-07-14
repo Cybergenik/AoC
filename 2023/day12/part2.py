@@ -3,55 +3,64 @@
 from tqdm import tqdm
 from copy import copy
 
-def find_perms(line, i, prev, arr):
-    while i < len(line) and line[i] != "?":
-        if line[i] == "#":
-            if len(arr) == 0:
+def key(i, arr, j):
+    return str(i)+"".join(map(str, arr))+str(j)
+
+def find_perms(line, i, arr, j, prev, cache):
+    k = key(i, arr, j)
+    if k not in cache:
+        while i < len(line) and line[i] != "?":
+            if line[i] == "#":
+                if j < len(arr) and arr[j] > 0:
+                    arr[j] -= 1
+                else:
+                    return 0
+            elif line[i] == '.':
+                if prev == "#":
+                    if arr[j] == 0:
+                        j += 1
+                    else:
+                        return 0
+            prev = line[i]
+            i += 1
+        if i == len(line):
+            return sum(arr) == 0
+        if j == len(arr):
+            if "#" in line[i:]:
                 return 0
-            arr[0] -= 1
-            if arr[0] < 0:
-                return 0
-        elif line[i] == "." and prev == "#":
-            if arr.pop(0) > 0:
-                return 0
-            if len(arr) == 0:
+            else:
                 return 1
-        prev = line[i]
-        i += 1
-    if i < len(line) and len(arr) > 0:
         total = 0
-        if arr[0] == 0:
-            total += find_perms(line, i+1, ".", arr[1:])
-        elif prev == "#" and arr[0] > 0:
-            arr1 = copy(arr)
-            arr1[0] -= 1
-            total += find_perms(line, i+1, "#", arr1)
+        if prev == "#":
+            if arr[j] > 0:
+                arr1 = copy(arr)
+                arr1[j] -= 1
+                total += find_perms(line, i+1, arr1, j, "#", cache)
+            else:
+                total += find_perms(line, i+1, arr, j+1, ".", cache)
         else:
             arr1 = copy(arr)
-            arr1[0] -= 1
-            total += find_perms(line, i+1, "#", arr1)
-            total += find_perms(line, i+1, ".", arr)
-        return total
-    return len(arr) == 0 or (len(arr) == 1 and arr[0] == 0)
+            arr1[j] -= 1
+            total += find_perms(line, i+1, arr1, j, "#", cache)
+            total += find_perms(line, i+1, arr, j, ".", cache)
+        cache[k] = total
+    return cache[k]
         
 def main():
-    with open("test.txt") as f:
+    with open("input.txt") as f:
         content = f.readlines()
             
     total = 0
     for l in tqdm(content):
         pattern, arr = l.strip().split()
-        pattern = list(pattern)
         arr = list(map(int, arr.split(",")))
-        OGP = copy(pattern)
+        OGP = pattern
         OGR = copy(arr)
         for i in range(4):
-            pattern.append("?")
-            pattern.extend(OGP)
+            pattern += "?"
+            pattern += OGP
             arr.extend(OGR)
-        juice = find_perms(pattern, 0, ".", arr)
-        total += juice
-    
+        total += find_perms(pattern, 0, arr, 0, None, {})
     print(total)
 
 if __name__ == "__main__":
