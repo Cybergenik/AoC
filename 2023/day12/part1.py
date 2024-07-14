@@ -3,48 +3,52 @@
 from tqdm import tqdm
 from copy import copy
 
-def fits(line, arr):
-    curr = 0
-    prev = "."
-    for c in line:
-        if c == "#":
-            if curr >= len(arr):
-                return 0
-            arr[curr] -= 1
-            if arr[curr] < 0:
-                return 0
-        elif c == ".":
-            if prev == "#":
-                curr += 1
-        prev = c
-    if sum(arr) != 0:
-        return 0
-    return 1
-
-def find_perms(line, i, arr):
-    if "?" not in line:
-        return fits(line, copy(arr))
-    total = 0
+def find_perms(line, i, arr, j, prev):
     while i < len(line) and line[i] != "?":
+        if line[i] == "#":
+            if j < len(arr) and arr[j] > 0:
+                arr[j] -= 1
+            else:
+                return 0
+        elif line[i] == '.':
+            if prev == "#":
+                if arr[j] == 0:
+                    j += 1
+                else:
+                    return 0
+        prev = line[i]
         i += 1
-    line1 = copy(line)
-    line1[i] = "#"
-    total += find_perms(line1, i+1, arr)
-    line2 = copy(line)
-    line2[i] = "."
-    total += find_perms(line2, i+1, arr)
+    if i == len(line):
+        return sum(arr) == 0
+    if j == len(arr):
+        if "#" in line[i:]:
+            return 0
+        else:
+            return 1
+    total = 0
+    if prev == "#":
+        if arr[j] > 0:
+            arr1 = copy(arr)
+            arr1[j] -= 1
+            total += find_perms(line, i+1, arr1, j, "#")
+        else:
+            total += find_perms(line, i+1, arr, j+1, ".")
+    else:
+        arr1 = copy(arr)
+        arr1[j] -= 1
+        total += find_perms(line, i+1, arr1, j, "#")
+        total += find_perms(line, i+1, arr, j, ".")
     return total
         
 def main():
     with open("input.txt") as f:
         content = f.readlines()
-            
     total = 0
     for l in tqdm(content):
         pattern, arr = l.strip().split()
-        pattern = list(pattern)
         arr = list(map(int, arr.split(",")))
-        total += find_perms(pattern, 0, arr)
+        pos = find_perms(pattern, 0, arr, 0, None)
+        total += pos
         
     print(total)
 
