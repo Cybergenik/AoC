@@ -70,7 +70,7 @@ def shortest_path(start, map, N, M):
     return min_heat
 
 def main():
-    with open("test.txt") as f:
+    with open("input.txt") as f:
         content = f.readlines()
 
     N = len(content)

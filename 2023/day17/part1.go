@@ -172,7 +172,7 @@ func shortest_path(start Path, m [][]uint8, N uint8, M uint8) uint64 {
 }
 
 func main(){
-    file, _ := os.ReadFile("input.txt")
+    file, _ := os.ReadFile("test.txt")
     m := [][]uint8{}
     lines := strings.Split(string(file), "\n")
     N := uint8(len(lines))-1
