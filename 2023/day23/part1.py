@@ -33,10 +33,9 @@ def longest_path(start, end, graph):
                 for u in adj(*v):
                     if graph[u] != "#" and u not in seen:
                         explore.append(u)
-                if len(explore) == 1:
+                if len(explore) > 0:
                     q.append((explore[0], steps+1, seen))
-                else:
-                    for u in explore:
+                    for u in explore[1:]:
                         q.append((u, steps+1, copy(seen)))
     return largest
 
@@ -51,8 +50,11 @@ def main():
 
     N = len(content)
     M = len(content[0].strip())
+    # Assumes these are the only start and end points
     start = (0, 1)
     end = (N-1, M-2)
+    assert graph[start] == "."
+    assert graph[end] == "."
     print(N, M)
     print(longest_path(start, end, graph))
 
