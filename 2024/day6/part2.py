@@ -25,22 +25,30 @@ def next_step(graph, x, y, dir):
             return next_step(graph, x, y, "^")
     return ((nx, ny), dir)
 
-def find_all_obstructions(graph, guard_start, N, M):
+def find_all_obstructions(graph, guard_start, all_locs):
     total = 0
-    for x in range(N):
-        for y in range(M):
-            if graph[(x,y)] == ".":
-                graph[(x,y)] = "#"
-                curr = (guard_start, "^")
-                seen = set()
-                while graph[curr[0]] != "_":
-                    if curr in seen:
-                        total += 1
-                        break
-                    seen.add(curr)
-                    curr = next_step(graph, *curr[0], curr[1])
-                graph[(x,y)] = "."
+    for x, y in all_locs:
+        if graph[(x,y)] == ".":
+            graph[(x,y)] = "#"
+            curr = (guard_start, "^")
+            seen = set()
+            while graph[curr[0]] != "_":
+                if curr in seen:
+                    total += 1
+                    break
+                seen.add(curr)
+                curr = next_step(graph, *curr[0], curr[1])
+            graph[(x,y)] = "."
     return total
+
+def walk(graph, guard_start):
+    curr = (guard_start, "^")
+    seen = set()
+    while graph[curr[0]] != "_":
+        if curr[0] not in seen:
+            seen.add(curr[0])
+        curr = next_step(graph, *curr[0], curr[1])
+    return seen
 
 def main():
     with open("input.txt") as f:
@@ -48,16 +56,14 @@ def main():
     
     graph = defaultdict(lambda: "_")
     guard_loc = None
-    N = 0
-    M = 0
     for y, l in enumerate(content):
-        M += 1
         for x, c in enumerate(l.strip()):
-            N += 1
             graph[(x,y)] = c
             if c == "^":
                 guard_loc = (x,y)
-    print(find_all_obstructions(graph, guard_loc, N, M))
+    all_locs = walk(graph, guard_loc)
+    all_locs.remove(guard_loc)
+    print(find_all_obstructions(graph, guard_loc, all_locs))
     
 if __name__ == "__main__":
     raise SystemExit(main())

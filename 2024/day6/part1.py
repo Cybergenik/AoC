@@ -38,14 +38,14 @@ def main():
     with open("input.txt") as f:
         content = f.readlines()
     
-    map = defaultdict(lambda: "_")
+    graph = defaultdict(lambda: "_")
     guard_loc = None
     for y, l in enumerate(content):
         for x, c in enumerate(l.strip()):
-            map[(x,y)] = c
+            graph[(x,y)] = c
             if c == "^":
                 guard_loc = (x,y)
-    print(walk(map, guard_loc))
+    print(walk(graph, guard_loc))
     
 if __name__ == "__main__":
     raise SystemExit(main())
